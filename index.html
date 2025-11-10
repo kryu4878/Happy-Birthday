@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Sanchita!</title>
+
+  <!-- This script pulls in Tailwind CSS for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- These are for the animations and photo gallery -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
+
+  <!-- Google Fonts for the Anime look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Link to your new external CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- IMPORTANT: Replace with a real image link after you upload it -->
+  <meta property="og:image" content="https://placehold.co/1200x630/87CEEB/FFFFFF?text=A+Surprise+For+Sanchita">
+</head>
+<body>
+<!-- Canvas for the falling cherry blossoms -->
+<canvas id="sakura-canvas"></canvas>
+
+<!-- Section 1: Hero Welcome -->
+<header class="h-screen relative flex items-center justify-center text-white overflow-hidden">
+  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+    <source src="img/sa.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+  <div class="text-center z-10 p-4" data-aos="fade-in" data-aos-duration="1500">
+    <h1 class="text-5xl md:text-7xl font-anime drop-shadow-lg">Happy Birthday, Sanchita!</h1>
+    <p class="mt-4 text-xl font-semibold">Celebrating a wonderful journey of...</p>
+    <div id="countdown" class="mt-6 text-2xl font-semibold tracking-widest leading-relaxed"></div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto p-6 md:p-12">
+
+  <!-- Section 2: A Letter For You -->
+  <section class="my-16 md:my-24 max-w-3xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-4xl md:text-5xl font-anime text-sakura mb-8 drop-shadow-sm">A Special Message For You</h2>
+    <div class="text-left text-lg leading-relaxed space-y-4 bg-white p-8 rounded-lg shadow-lg">
+      <!-- TODO: Write your personal letter here -->
+      <p>Hey Sanchita,</p>
+      <p>Wish you a very Happy Birthday Sanchita! May god fulfil all your wishes, you have an endless supply of happy days and your dreams turns into reality, A life surrounded with pets and life that will become a manga </p>
+      <p>Thankyou for always being so kind and reason behind everyone smile, Always connected to your roots , A true friend to everyone, You always be yourself and that's your vibe We all are very lucky, we are not in city of gems still we found a real gem.</p>
+      <p class="text-right mt-8">
+        Regards<br>
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 3: The Timeline -->
+  <section class="my-16 md:my-24">
+    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">Your Story Arc</h2>
+    <div class="space-y-16">
+      <!-- Timeline Item 1 -->
+      <div class="flex flex-col md:flex-row items-center gap-8" data-aos="fade-right">
+        <!-- TODO: Replace with your photo -->
+        <img src="img/jammu.png" alt="The day we met" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
+        <div class="text-center md:text-left">
+          <!-- TODO: Customize the date and story -->
+          <h3 class="text-2xl font-anime text-sakura">Jammu</h3>
+          <p class="mt-2 text-lg">Jammu — the City of Temples, where the Tawi River winds through peaceful hills. A blend of faith, warmth, and timeless beauty, it’s the soulful gateway to the Himalayas.</p>
+            <br>
+            <p><a href="https://www.goindigo.in/indian-destinations/jammu.html" target="_blank">Things to do in Jammu</a></p>
+            <br>
+            <p><a href="https://www.google.com/travel/flights?client=firefox-b-lm&sca_esv=bdbe2dd8fffd653b&channel=entpr&biw=1920&bih=963&output=search&q=pune+to+jammu+flight&source=lnms&mode_promoted=true&impression_in_search=true&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZg_6SRHWjSof7Vw6bVkwVob1znb05TYXTXyGpz0lQ8GweBA5kFaJyuTAf05QMLr6avYfrfRMEd8iGvV9U7aw4JA8Z9yKSVYvvqx81UbXOuZ7rEK6yvAkQGf2pnobGZGMw15vcn_BfPT7tHdsFNdveiFEOKYEmaH-qKsLctU8jxdhUDjqItdz2gAGsyKd0GNq7oqmBLg&ved=1t:200715&ictx=111" target="_blank">Flights to take you to Jammu</a></p>
+            <br>
+            <p><a href="https://sit-student-kit.netlify.app/" target="_blank">Place where you always think about jammu</a></p>
+
+        </div>
+      </div>
+      <!-- Timeline Item 2 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8" data-aos="fade-left">
+        <!-- TODO: Replace with your photo -->
+        <img src="img/food.png" alt="A memorable trip" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
+        <div class="text-center md:text-right">
+          <!-- TODO: Customize the date and story -->
+          <h3 class="text-2xl font-anime text-sakura">Amritsari Kulcha</h3>
+          <p class="mt-2 text-lg">Food, good food where Pune always lags behind, you'll never get the food good as in Amritsar or Jammu but still can try to tackle your cravings.</p>
+         <br>
+            <p><a href="https://yetithehimalayankitchen.com/pune-baner/" target="_blank">Best Momos in Pune</a></p>
+            <br>
+            <p><a href="https://www.zomato.com/pune/restaurants/dish-amritsari-kulcha" target="_blank">Amritsari Kulcha in Pune </a> <p>
+        </div>
+      </div>
+      <!-- Timeline Item 3 (NEW) -->
+      <div class="flex flex-col md:flex-row items-center gap-8" data-aos="fade-right">
+        <img src="img/mumbai.png" alt="Eating Amritsari Kulcha" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
+        <div class="text-center md:text-left">
+          <h3 class="text-2xl font-anime text-sakura">Mumbai</h3>
+          <p class="mt-2 text-lg">Mumbai — the city that never hits pause. From vada pav to velvet nights, it’s hustle, heart, and high tide all rolled into one.</p>
+         <br>
+            <p><a href="https://www.lonelyplanet.com/articles/top-things-to-do-in-mumbai" target="_blank">Things to Do in Mumbai</a></p>
+            <br>
+            <p><a href="https://www.airbnb.co.in/s/Mumbai--Maharashtra--India/homes?refinement_paths%5B%5D=%2Fhomes&location=Mumbai%2C+Maharashtra%2C+India&adults=6&children=0" target="_blank">Hotels in Mumbai</a></p>
+            <br>
+            <p><a href="img/pune_to_mumbai.pdf" target="_blank">Train Ticket to Mumbai</a></p>
+            <br>
+            <p><a href="https://www.redbus.in/bus-tickets/mumbai-to-pune?fromCityName=Mumbai&fromCityId=462&srcCountry=India&fromCityType=CITY&toCityName=Pune&toCityId=130&destCountry=India&toCityType=CITY&onward=16-Oct-2025&doj=16-Oct-2025&ref=home#" target="_blank">Coming Back from Mumbai</a></p>
+
+        </div>
+      </div>
+      <!-- Timeline Item 4 (NEW) -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8" data-aos="fade-left">
+        <img src="img/imagica.png" alt="Jammu - The city of temples" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
+        <div class="text-center md:text-right">
+          <h3 class="text-2xl font-anime text-sakura">Imagica</h3>
+          <p class="mt-2 text-lg">With unique thematic indoor shows & thrilling outdoor Theme Park Rides, Grand Imagicaa Parade and more makes this India's best theme park!</p>
+            <br>
+            <p><a href="https://www.imagicaaworld.com/" target="_blank">Imagica!</a></p>
+            <br>
+            <p><a href="https://www.imagicaaworld.com/" target="_blank">Tickets</a></p>
+            <br>
+            <p><a href="https://www.imagicaaworld.com/travel/" target="_blank">How to Reach Imagica</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Sanchita's Favorite Anime (NEW SECTION) -->
+  <section class="my-16 md:my-24">
+    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">Hall of Fame</h2>
+    <div class="relative">
+      <!-- Scroll Buttons -->
+      <button id="scroll-left-btn" class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-2 shadow-md transition-opacity opacity-0 md:opacity-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sakura" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+      </button>
+      <button id="scroll-right-btn" class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-2 shadow-md transition-opacity opacity-0 md:opacity-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sakura" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+      </button>
+
+      <!-- Scrollable Container -->
+      <div id="hall-of-fame-scroller" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide p-4 -mx-4">
+        <div class="flex snap-x snap-mandatory gap-8">
+          <!-- Anime Card 1 -->
+          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="100">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
+              <img src="img/naruto.png" alt="Anime Poster 1" class="w-full h-80 object-cover rounded-md mb-4">
+              <h3 class="text-2xl font-anime text-sakura">Naruto</h3>
+              <p class="mt-2">"Life’s not about how many times you fall — it’s about getting back up and proving you’ve got the guts to never give up! Believe it! When people doubt you, that’s when you fight harder. Dreams don’t come easy, but if you never quit, you’ll shine brighter than anyone ever thought you could.”"</p>
+            </div>
+          </div>
+          <!-- Anime Card 2 -->
+          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
+              <img src="img/pickachu.png" alt="Anime Poster 2" class="w-full h-80 object-cover rounded-md mb-4">
+              <h3 class="text-2xl font-anime text-sakura">Pickachu</h3>
+              <p class="mt-2">"“Pika pika! You don’t become strong in one battle. Every spark, every step — it all counts. Keep training, keep trying, and one day you’ll shine brighter than ever!Even when things start small, they can grow into something powerful. Don’t rush. Keep giving your best — your time will come"</p>
+            </div>
+          </div>
+          <!-- Anime Card 3 -->
+          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="300">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
+              <img src="img/demon.png" alt="Anime Poster 3" class="w-full h-80 object-cover rounded-md mb-4">
+              <h3 class="text-2xl font-anime text-sakura">Demon Slayer</h3>
+              <p class="mt-2">"No one is born evil. Even those who’ve fallen into darkness once dreamed of the light. If you can understand someone’s pain — even for a moment — you’ve already done something powerfulTurn pain into empathy. Turn loss into purpose.And fight — not just to win — but to heal what’s broken"</p>
+            </div>
+          </div>
+          <!-- Anime Card 4 -->
+          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="400">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
+              <img src="img/spirit.png" alt="Anime Poster 4" class="w-full h-80 object-cover rounded-md mb-4">
+              <h3 class="text-2xl font-anime text-sakura">Spirited Away</h3>
+              <p class="mt-2">"Even when you’re lost and afraid, don’t forget who you are. Be kind. Be brave. Every small act of courage leads you back to yourself Change is scary — but it’s how we grow. Kindness has power, even when no one sees it.And remembering your true self is the greatest magic of all."</p>
+            </div>
+          </div>
+          <!-- Anime Card 5 -->
+          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="500">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
+              <img src="img/tokyo.png" alt="Anime Poster 5" class="w-full h-80 object-cover rounded-md mb-4">
+              <h3 class="text-2xl font-anime text-sakura">Tokyo Ghoul</h3>
+              <p class="mt-2">"It’s not about choosing between being human or a ghoul. It’s about accepting both — the kindness and the hunger, the light and the dark. We all wear masks. The real strength is taking them off ain doesn’t make you weak — it shows you’re still alive. Identity isn’t one side or the other — it’s everything you’ve survived.Acceptance is the first step toward freedom."</p>
+            </div>
+          </div>
+          <!-- Anime Card 6 -->
+          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="600">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
+              <img src="img/L.png" alt="Anime Poster 6" class="w-full h-80 object-cover rounded-md mb-4">
+              <h3 class="text-2xl font-anime text-sakura">Death Note</h3>
+              <p class="mt-2">"Justice isn’t something you decide alone. The moment you stop questioning yourself, you’ve already lost sight of it.Intelligence without conscience is chaos. Power tests character more than strength.The greatest battles are the ones inside your own mind."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: The Gallery -->
+  <section class="my-16 md:my-24">
+    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">The C.V.A. Collection</h2>
+    <p class="text-center text-lg -mt-8 mb-12">(Cats Very-own Adventures)</p>
+    <div id="lightgallery" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <a href="img/1.png" data-aos="zoom-in" class="block w-full h-48 md:h-64">
+        <img src="img/1.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 1">
+      </a>
+      <a href="img/2.png" data-aos="zoom-in" data-aos-delay="100" class="block w-full h-48 md:h-64">
+        <img src="img/2.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 2">
+      </a>
+      <a href="img/3.png" data-aos="zoom-in" data-aos-delay="200" class="block w-full h-48 md:h-64">
+        <img src="img/3.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 3">
+      </a>
+      <a href="img/4.png" data-aos="zoom-in" data-aos-delay="300" class="block w-full h-48 md:h-64">
+        <img src="img/4.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 4">
+      </a>
+      <!-- Second Row of Photos -->
+      <a href="img/5.png" data-aos="zoom-in" data-aos-delay="400" class="block w-full h-48 md:h-64">
+        <img src="img/5.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 5">
+      </a>
+      <a href="img/6.png" data-aos="zoom-in" data-aos-delay="500" class="block w-full h-48 md:h-64">
+        <img src="img/6.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 6">
+      </a>
+      <a href="img/7.png" data-aos="zoom-in" data-aos-delay="600" class="block w-full h-48 md:h-64">
+        <img src="img/7.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 7">
+      </a>
+      <a href="img/8.png" data-aos="zoom-in" data-aos-delay="700" class="block w-full h-48 md:h-64">
+        <img src="img/8.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 8">
+      </a>
+      <!-- Third Row of Photos -->
+      <a href="img/9.png" data-aos="zoom-in" data-aos-delay="800" class="block w-full h-48 md:h-64">
+        <img src="img/9.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 9">
+      </a>
+      <a href="img/10.png" data-aos="zoom-in" data-aos-delay="900" class="block w-full h-48 md:h-64">
+        <img src="img/10.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 10">
+      </a>
+      <a href="img/11.png" data-aos="zoom-in" data-aos-delay="1000" class="block w-full h-48 md:h-64">
+        <img src="img/11.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 11">
+      </a>
+      <a href="img/12.png" data-aos="zoom-in" data-aos-delay="1100" class="block w-full h-48 md:h-64">
+        <img src="img/12.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 12">
+      </a>
+    </div>
+  </section>
+
+    <!-- Section 6: Video Finale -->
+    <section class="my-16 md:my-24" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-anime text-center mb-4">Happy Birthday Sanchita</h2>
+        <div class="max-w-4xl mx-auto rounded-lg shadow-2xl overflow-hidden bg-navy">
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-navy text-white p-8 text-center">
+  <p>Enjoy your day to the fullest.</p>
+  <p class="text-sm opacity-70 mt-2">Hope you liked it...</p>
+</footer>
+
+<!-- These scripts are for the animations and photo gallery -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+
+<!-- Link to your new external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
