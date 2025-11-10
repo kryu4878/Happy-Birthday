@@ -4,6 +4,11 @@ A creative and heartfelt way to wish someone a happy birthday — through a pers
 Originally created for someone special, now open for everyone to use and share 💖  
 
 ---
+## 🌐 Live Demo  
+🎉 **[https://happybirthday-template.netlify.app/](https://happybirthday-template.netlify.app/)**
+
+Fork it, customize it, and create a unique birthday experience for your loved ones 💝  
+---
 
 ## 🌟 Overview
 
